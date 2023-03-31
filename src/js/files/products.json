@@ -1,0 +1,82 @@
+[
+	{
+		"id": 1,
+		"title": "Eye Mesh Boat Shoes",
+		"status": "New",
+		"price": 220.00,
+		"discount": "",
+		"imageSource": "card1.png"
+	},
+	{
+		"id": 2,
+		"title": "Azure Tote",
+		"status": "",
+		"price": 290.00,
+		"discount": "",
+		"imageSource": "card2.png"
+	},
+	{
+		"id": 3,
+		"title": "Blue Raincoat",
+		"status": "",
+		"price": "Out of stock",
+		"discount": "",
+		"imageSource": "card3.png"
+	},
+	{
+		"id": 4,
+		"title": "Backpack with contrasting buckle",
+		"status": "BEST SELLER",
+		"price": 125.00,
+		"discount": "",
+		"imageSource": "card4.png"
+	},
+	{
+		"id": 5,
+		"title": "Shirt in organic cotton classic gingham",
+		"status": "BEST SELLER",
+		"price": 59.50,
+		"discount": "",
+		"imageSource": "card5.png"
+	},
+	{
+		"id": 6,
+		"title": "Tailored indigo jumpsuit",
+		"status": "BEST SELLER",
+		"price": 59.50,
+		"discount": 165.00,
+		"imageSource": "card6.png"
+	},
+	{
+		"id": 7,
+		"title": "Triple stone drop earrings",
+		"status": "TOP RATE",
+		"price": 49.50,
+		"discount": "",
+		"imageSource": "card7.png"
+	},
+	{
+		"id": 8,
+		"title": "Backpack with contrasting buckle",
+		"status": "",
+		"price": 158.00,
+		"discount": "",
+		"imageSource": "card8.png"
+	},
+	{
+		"id": 9,
+		"title": "Eye Mesh Boat Shoes",
+		"status": "Only a few left",
+		"price": 220.00,
+		"discount": "",
+		"imageSource": "card9.png"
+	},
+	{
+		"id": 10,
+		"title": "Azure Tote",
+		"status": "",
+		"price": 290.00,
+		"discount": "",
+		"imageSource": "card10.png"
+	}
+]

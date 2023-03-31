@@ -1,0 +1,231 @@
+.shop {
+	padding: 50px 0px 100px 0px;
+	// .shop__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+	// .shop__nav
+	&__nav {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		margin-bottom: 50px;
+		@media (max-width: 563.98px) {
+			gap: 20px;
+		}
+		@media (max-width: 417.98px) {
+			gap: 10px;
+		}
+	}
+	// .shop__item
+	&__item {
+		font-size: 24px;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		@media (max-width: 563.98px) {
+			font-size: 18px;
+		}
+		@media (max-width: 395.98px) {
+			font-size: 16px;
+		}
+		@media (max-width: 353.98px) {
+			font-size: 14px;
+		}
+		&:hover {
+			text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+		}
+	}
+	// .shop__block
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+		// height: 100%;
+		row-gap: 50px;
+		margin-left: -15px;
+		margin-right: -15px;
+		background-color: rgb(255, 255, 255);
+		// justify-content: flex-start;
+		@media (max-width: 414.98px) {
+			margin-left: 0;
+			margin-right: 0;
+			justify-content: space-between;
+		}
+	}
+
+	// .shop__card
+	&__card {
+	}
+}
+.card-shop {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 20%;
+	overflow: hidden;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-bottom: 10px;
+	max-height: 100%;
+	// max-height: 564px;
+	min-width: 200px;
+	@media (max-width: 1014.98px) {
+		flex: 0 1 25%;
+	}
+	@media (max-width: 814.98px) {
+		flex: 0 1 33.33%;
+	}
+	@media (max-width: 614.98px) {
+		flex: 0 1 50%;
+	}
+	@media (max-width: 414.98px) {
+		max-width: 170px;
+		min-width: 150px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@media (max-width: 385.98px) {
+		max-width: 150px;
+		min-width: 130px;
+	}
+	@media (max-width: 345.98px) {
+		max-width: 138px;
+		min-width: 120px;
+	}
+	// .card-shop__image
+	&__image {
+		// margin-bottom: 15px;
+		// transition: all 0.3s ease;
+		overflow: hidden;
+		// max-height: 458px;
+		background-color: rgb(255, 255, 255);
+		// position: absolute;
+		// border: 2px solid #000;
+		position: relative;
+		padding: 0px 0px 126.17% 0px;
+		margin-bottom: 10px;
+		img {
+			transition: all 0.3s ease;
+			display: block;
+		}
+		img:hover {
+			transform: scale(1.1);
+		}
+	}
+	// .card-shop__picture
+	&__picture {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 100%;
+		object-fit: cover;
+	}
+	// .card-shop__info
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+	}
+	// .card-shop__status
+	&__status {
+		display: flex;
+		gap: 5px;
+		margin-bottom: 10px;
+		height: 15px;
+		flex: 1 1 auto;
+
+		// .card-shop__status_title
+		&_title {
+			font-weight: 600;
+			flex: 1 1 auto;
+		}
+	}
+	&__block-price {
+		display: flex;
+		flex: 1 1 auto;
+	}
+	// .card-shop__name
+	&__name {
+		margin-bottom: 10px;
+		display: flex;
+		color: #454545;
+		min-height: 28px;
+	}
+	// .card-shop__price
+	&__price {
+		font-weight: 600;
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 10px;
+	}
+	// .card-shop__discount
+	&__discount {
+		color: #959595;
+		text-decoration: line-through;
+		display: inline-block;
+	}
+
+	// .card-shop__button
+	&__button {
+		font-size: 16px;
+		background-color: rgb(58, 199, 117);
+		padding: 10px 10px 10px 10px;
+		color: #fff;
+		font-weight: 600;
+		display: block;
+		transition: all 0.2s ease;
+		&:hover {
+			background-color: rgb(53, 184, 108);
+		}
+	}
+}
+
+.item-active {
+	position: relative;
+	font-weight: 600;
+	&::after {
+		content: '';
+		width: 100%;
+		height: 4px;
+		background-color: #000;
+		position: absolute;
+		bottom: -7px;
+		left: 0;
+	}
+}
+
+.uniqe-status {
+	color: rgb(247, 53, 53);
+}
+
+.button-inactive {
+	background-color: rgb(177, 177, 177);
+	&:hover {
+		background-color: rgb(177, 177, 177);
+	}
+}
+
+.shop {
+	// .shop__more
+	&__more {
+		margin-top: 50px;
+		width: 100px;
+		align-self: center;
+	}
+	// .shop__text
+	&__text {
+		margin-bottom: 10px;
+		color: #858585;
+		font-size: 14px;
+	}
+}
+.fa-solid {
+	
+}
+.fa-arrow-down {
+	color: #858585;
+	font-size: 16px;
+}
+

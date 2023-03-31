@@ -1,0 +1,142 @@
+
+.hero {
+	height: 100vh;
+	// min-height: 700px;
+	background-color: #e5e5e3;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(#000, 0.05);
+	}
+
+	&__container {
+		position: relative;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		height: 100%;
+		padding: 0px 300px;
+	}
+	// .hero__title
+	&__title {
+		font-size: 72px;
+		font-weight: 600;
+		min-width: 560px;
+		margin-bottom: 40px;
+	}
+	// .hero__descr
+	&__descr {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	&__image {
+		// position: absolute;
+		right: 250px;
+		bottom: 0;
+		// max-height: 1%;
+	}
+	&__text {
+		
+	}
+}
+
+.banner-slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+}
+.slider-wrapper {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	// overflow: hidden;
+	transition: all 0.4s ease;
+	position: relative;
+}
+
+.slide {
+	transition: all 0.4s ease;
+	position: absolute;
+	opacity: 0;
+}
+
+.slide.active {
+	display: block;
+	transition: all 0.4s ease;
+	opacity: 1;
+}
+
+.slider-slider {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-width: 100%;
+	position: relative;
+	transition: all 1s;
+	z-index: 3;
+}
+
+.slider__btn {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 25px;
+	transition: all 0.3s;
+	z-index: 4;
+
+}
+
+.slider__button {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 255);
+	display: block;
+	content: '';
+	transition: all 0.3s;
+	position: relative;
+	border: 2px solid rgba(0, 0, 0, 0.185);
+}
+
+.red {
+	background-color: rgb(212, 0, 0);
+	transition: all 1s;
+
+}
+
+.yellow {
+	background-color: rgb(251, 255, 31);
+	transition: all 1s;
+
+}
+
+// .active {
+// 	display: flex;
+// }
+
+.slider__button.active {
+	transition: all 0.3s;
+	&::after {
+		content: '';
+		width: 13px;
+		height: 13px;
+		background-color: rgb(29, 29, 29);
+		display: block;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
